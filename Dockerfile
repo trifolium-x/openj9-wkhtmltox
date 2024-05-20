@@ -1,6 +1,6 @@
 ## 构建jdk基础镜像
 FROM ibm-semeru-runtimes:open-17.0.10_7-jre-jammy as build_base_image
-LABEL app="trifolium0/openj9-jdk17-wkhtmltox" version="1.0" by="wangxudong"
+LABEL app="trifolium0/openj9-jdk17-wkhtmltox" version="1.0" by="trifolium.wang"
 MAINTAINER trifolium <trifolium.wang@gmail.com>
 
 RUN mkdir /wkhtmltox
