@@ -48,7 +48,8 @@ EXPOSE 8080
 ```
 ```
 private String generatePDFFile(String html) throws Exception {
-
+        // 自动查找wkhtmltopdf可执行，找不到手动指定吧
+        String executable = WrapperConfig.findExecutable();
         Pdf pdf = new Pdf(new WrapperConfig(executable));
         pdf.setTimeout(30);
         pdf.addParam(new Param("--enable-javascript"));
